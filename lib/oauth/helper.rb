@@ -41,6 +41,11 @@ module OAuth
           values.sort.collect do |v|
             [escape(k),escape(v)] * "="
           end
+        elsif values.is_a?(Hash)
+          key = k
+          values.sort.collect do |k, v|
+            [escape("#{key}[#{k}]"),escape(v)] * "="
+          end
         else
           [escape(k),escape(values)] * "="
         end
