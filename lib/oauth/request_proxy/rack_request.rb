@@ -29,12 +29,16 @@ module OAuth::RequestProxy
 
   protected
 
+    def process_request_params?
+      request.formats.to_s.downcase == 'application/x-www-form-urlencoded'
+    end
+
     def query_params
       request.GET
     end
 
     def request_params
-      if request.content_type.to_s.downcase == 'application/x-www-form-urlencoded'
+      if process_request_params?
         request.POST
       else
         {}
