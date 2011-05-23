@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{oauth}
-  s.version = "0.4.4"
+  s.name = %q{sayso-oauth}
+  s.version = "0.4.4.001"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Pelle Braendgaard", "Blaine Cook", "Larry Halff", "Jesse Clark", "Jon Crosby", "Seth Fitzsimmons", "Matt Sanford", "Aaron Quint"]
+  s.authors = ["SaySo"]
   s.date = %q{2010-10-31}
-  s.description = %q{OAuth Core Ruby implementation}
-  s.email = %q{oauth-ruby@googlegroups.com}
+  s.description = %q{OAuth Core Ruby implementation - forked and gemified for sayso}
+  s.email = %q{sayso@truvolabs.com}
   s.executables = ["oauth"]
   s.extra_rdoc_files = [
     "LICENSE",
@@ -111,7 +111,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{oauth}
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{OAuth Core Ruby implementation}
+  s.summary = %q{OAuth Core Ruby implementation - forked and gemified for sayso}
   s.test_files = [
     "test/cases/oauth_case.rb",
      "test/cases/spec/1_0-final/test_construct_request_url.rb",
